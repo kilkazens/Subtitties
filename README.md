@@ -152,4 +152,4 @@ Subtitties/
 
 ## 📄 License
 
-MIT License. Free for commercial and personal video editing.
+Apache License 2.0. See [LICENSE](LICENSE) for details. Free for commercial and personal video editing.
