@@ -1,9 +1,18 @@
 @echo off
-title Subtitties - AI Subtitle Editor
+title Subtitties - Создатель субтитров
 cd /d "%~dp0"
-start "" pythonw app.py
+
+echo Запуск Subtitties...
+python main.py
 if %errorlevel% neq 0 (
-    echo Starting Subtitties in console mode...
-    python app.py
+    echo.
+    echo Попытка запуска через py launcher...
+    py main.py
+)
+if %errorlevel% neq 0 (
+    echo.
+    echo ========================================================
+    echo   Произошла ошибка при запуске программы.
+    echo ========================================================
     pause
 )

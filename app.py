@@ -683,3 +683,8 @@ class SubtittiesApp(ctk.CTk):
                 segments.append(SubtitleSegment(start=start, end=end, text=text))
 
         return segments
+
+
+if __name__ == "__main__":
+    app = SubtittiesApp()
+    app.mainloop()
